@@ -28,3 +28,7 @@ deploy:
     - kubectl rollout status deployment/meu-app
   only:
     - main  # Altere conforme necessário
+git add Dockerfile deployment.yaml .gitlab-ci.yml
+git commit -m "Configurar pipeline de CI/CD para meu-app"
+git push origin main
+
